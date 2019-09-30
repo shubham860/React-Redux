@@ -3,6 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { createStore} from 'redux' ;
+import rootreducers from './Reducers/index';
+
+
+// const INCREMENT = 'INCREMENT'
+// const DECREMENT = 'DECREMENT'
+//
+// const increment = () => {
+//   return {
+//     type : INCREMENT
+//   }
+// }
+//
+// const decrement = () => {
+//   return {
+//     type : DECREMENT
+//   }
+// }
+
+
+
+const store = createStore(rootreducers);
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
