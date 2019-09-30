@@ -4,11 +4,11 @@ const initialstate = {
 
 const Counter = (state= initialstate,action) => {
     switch(action.type){
-      case INCREMENT : return{
+      case 'INCREMENT' : return{
         ...state,
-        count : state.count+1
+        count : state.count+ action.payload
       }
-      case DECREMENT : return {
+      case 'DECREMENT' : return {
         ...state,
         count : state.count - 1
       }
