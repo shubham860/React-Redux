@@ -9,6 +9,7 @@ function App() {
   const isLogged = useSelector(state => state.isLogged);
   const dispatch = useDispatch();
   return (
+
     <div className="App">
       <h1>Counter {Counter}</h1>
       <button onClick={()=> dispatch(increment(5))}>+</button>
@@ -17,6 +18,7 @@ function App() {
         isLogged ? <h3>Valuable information</h3> : ''
       }
     </div>
+    
   );
 }
 
