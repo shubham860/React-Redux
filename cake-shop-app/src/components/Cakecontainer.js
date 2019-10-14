@@ -4,7 +4,6 @@ import {buyCake} from '../Redux'
 import {connect} from 'react-redux'
 
 function Cakecontainer (props){
-
     return(
       <div>
           <h2>Number of Cakes - {props.numOfCakes}</h2>
