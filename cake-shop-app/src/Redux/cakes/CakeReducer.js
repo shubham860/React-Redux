@@ -10,7 +10,6 @@ const reducer = (state = initialstate,action) => {
     }
     default : return state
   }
-
 }
 
 export default reducer;
