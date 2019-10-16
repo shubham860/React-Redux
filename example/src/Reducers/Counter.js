@@ -12,7 +12,6 @@ const Counter = (state= initialstate,action) => {
         ...state,
         count : state.count - 1
       }
-
       default : return state
     }
 }
